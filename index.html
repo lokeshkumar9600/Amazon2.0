@@ -16,6 +16,12 @@
       integrity="sha384-VngWWnG9GS4jDgsGEUNaoRQtfBGiIKZTiXwm9KpgAeaRn6Y/1tAFiyXqSzqC8Ga/"
       crossorigin="anonymous"
     ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
   </head>
   <body>
     <div class="bg-white w-full">
@@ -129,7 +135,9 @@
               d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
             />
           </svg>
+          <a href="cart.html">
           <div
+          
             class="
               cart-icon
               rounded-xl
@@ -139,8 +147,12 @@
               bg-yellow-500
               flex
               items-center
+              relative
             "
           >
+          <div class="text-black text-xs font-medium flex justify-center items-center cart-item-number bg-white h-4 w-4 rounded-full absolute -top-1 -right-1">
+            1
+          </div>
             <svg
               class="h-4 w-4 text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
@@ -157,6 +169,7 @@
               />
             </svg>
           </div>
+          </a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-4 w-4"
